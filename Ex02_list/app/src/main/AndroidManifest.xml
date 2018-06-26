@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ex02_list">
+
+    <!-- 사용권한 관련 코드 -->
+    <!-- 전화걸기 권한 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 이 곳에 적지 않은 Activity는 실행이 되지 않음 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ListDemo1" />
+        <activity android:name=".ListDemo2" />
+        <activity android:name=".ListXml" />
+        <activity android:name=".ListArray" />
+        <activity android:name=".PhonebookActivity" />
+        <activity android:name=".ProductActivity" />
+        <activity android:name=".SpinnerActivity"></activity>
+    </application>
+
+</manifest>
