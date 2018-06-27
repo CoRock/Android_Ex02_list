@@ -42,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button8:
                 intent = new Intent(this, GridActivity.class);
                 break;
+            case R.id.button9:
+                intent = new Intent(this, AutoActivity.class);
+                break;
         }
         startActivity(intent);
     }
