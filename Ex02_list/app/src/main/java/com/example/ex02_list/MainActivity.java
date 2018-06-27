@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button7:
                 intent = new Intent(this, SpinnerActivity.class);
                 break;
+            case R.id.button8:
+                intent = new Intent(this, GridActivity.class);
+                break;
         }
         startActivity(intent);
     }
