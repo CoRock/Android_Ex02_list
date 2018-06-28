@@ -28,6 +28,17 @@ public class ReadWriteActivity extends AppCompatActivity {
         btnDelete = (Button) findViewById(R.id.btnDelete);
         edit1 = (EditText) findViewById(R.id.edit1);
 
+        // 삭제 버튼
+        btnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // /data/data/패키지/files 의 파일 삭제
+                deleteFile("test.txt");
+                Toast.makeText(ReadWriteActivity.this,
+                        "삭제되었습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         // 불러오기 버튼
         btnLoad.setOnClickListener(new View.OnClickListener() {
             @Override
