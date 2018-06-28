@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button1:
                 intent = new Intent(this, ResourceActivity.class);
                 break;
+            case R.id.button2:
+                intent = new Intent(this, ReadWriteActivity.class);
+                break;
         }
         startActivity(intent);
     }
