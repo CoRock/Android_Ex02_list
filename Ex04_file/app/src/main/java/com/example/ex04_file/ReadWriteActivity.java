@@ -7,8 +7,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class ReadWriteActivity extends AppCompatActivity {
 
@@ -24,6 +27,37 @@ public class ReadWriteActivity extends AppCompatActivity {
         btnLoad = (Button) findViewById(R.id.btnLoad);
         btnDelete = (Button) findViewById(R.id.btnDelete);
         edit1 = (EditText) findViewById(R.id.edit1);
+
+        // 불러오기 버튼
+        btnLoad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    // 내부 메모리에 저장된 파일을 열기 위한 스트림
+                    // /data/data/패키지/files 디렉토리에 있는 test.txt 파일 조회
+                    InputStream is = openFileInput("test.txt");
+
+                    if (is != null) {
+                        // new InputStreamReader(스트림, 문자셋)
+                        InputStreamReader reader = new InputStreamReader(is, "utf-8");
+                        BufferedReader br = new BufferedReader(reader);
+                        String str = "";
+                        StringBuilder sb = new StringBuilder();
+
+                        // 한 라인씩 읽음
+                        while((str = br.readLine()) != null) {
+                            sb.append(str + "\n");
+                        }
+
+                        is.close();     // 스트림 닫기
+
+                        edit1.setText(sb.toString());   // 붙임
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
         // 저장 버튼 클릭
         btnSave.setOnClickListener(new View.OnClickListener() {
