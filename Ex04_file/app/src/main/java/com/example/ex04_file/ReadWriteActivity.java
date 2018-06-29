@@ -21,7 +21,7 @@ public class ReadWriteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_read_write);
+        setContentView(R.layout.read_write);
 
         btnSave = (Button) findViewById(R.id.btnSave);
         btnLoad = (Button) findViewById(R.id.btnLoad);
