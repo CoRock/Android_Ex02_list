@@ -22,7 +22,8 @@
         </activity>
         <activity android:name=".ResourceActivity" />
         <activity android:name=".ReadWriteActivity" />
-        <activity android:name=".ExternalActivity"></activity>
+        <activity android:name=".ExternalActivity" />
+        <activity android:name=".BackupActivity"></activity>
     </application>
 
 </manifest>
