@@ -1,5 +1,6 @@
 package com.corock.ex07_graphics;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
         switch (v.getId()) {
             case R.id.button1:
                 intent = new Intent(this, ShapeActivity.class);
+                break;
+            case R.id.button2:
+                intent = new Intent(this, KeyActivity.class);
                 break;
         }
         startActivity(intent);
