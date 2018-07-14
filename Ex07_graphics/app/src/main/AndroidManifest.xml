@@ -19,7 +19,8 @@
         <activity android:name=".ShapeActivity" />
         <activity android:name=".KeyActivity" />
         <activity android:name=".MultiTouch" />
-        <activity android:name=".CustomActivity"></activity>
+        <activity android:name=".CustomActivity" />
+        <activity android:name=".GameActivity"></activity>
     </application>
 
 </manifest>

@@ -1,6 +1,5 @@
 package com.corock.ex07_graphics;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.button5:
                 intent = new Intent(this, CustomActivity.class);
+                break;
+            case R.id.button6:
+                intent = new Intent(this, GameActivity.class);
                 break;
         }
         startActivity(intent);
