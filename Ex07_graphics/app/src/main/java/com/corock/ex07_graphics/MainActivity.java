@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button6:
                 intent = new Intent(this, GameActivity.class);
                 break;
+            case R.id.button7:
+                intent = new Intent(this, ImageRotateActivity.class);
+                break;
         }
         startActivity(intent);
     }
