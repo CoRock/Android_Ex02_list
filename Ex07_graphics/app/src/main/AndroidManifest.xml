@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".ShapeActivity" />
         <activity android:name=".KeyActivity" />
-        <activity android:name=".MultiTouch"></activity>
+        <activity android:name=".MultiTouch" />
+        <activity android:name=".CustomActivity"></activity>
     </application>
 
 </manifest>
