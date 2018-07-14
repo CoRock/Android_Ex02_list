@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button2:
                 intent = new Intent(this, KeyActivity.class);
                 break;
+            case R.id.button3:
+                intent = new Intent(this, MultiTouch.class);
+                break;
         }
         startActivity(intent);
     }

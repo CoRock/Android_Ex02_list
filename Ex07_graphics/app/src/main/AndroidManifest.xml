@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ShapeActivity" />
-        <activity android:name=".KeyActivity"></activity>
+        <activity android:name=".KeyActivity" />
+        <activity android:name=".MultiTouch"></activity>
     </application>
 
 </manifest>
