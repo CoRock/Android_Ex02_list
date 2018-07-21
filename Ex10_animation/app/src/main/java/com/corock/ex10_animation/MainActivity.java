@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button1:
                 intent = new Intent(this, FrameAnimation.class);
                 break;
+            case R.id.button2:
+                intent = new Intent(this, TweenAnimation.class);
+                break;
         }
         startActivity(intent);
     }
