@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn1:
                 intent = new Intent(this, OptionMenuActivity.class);
                 break;
+            case R.id.btn2:
+                intent = new Intent(this, OptionXmlActivity.class);
+                break;
         }
         startActivity(intent);
     }
