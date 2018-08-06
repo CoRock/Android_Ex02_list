@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".OptionMenuActivity" />
         <activity android:name=".OptionXmlActivity" />
-        <activity android:name=".MenuCheckActivity"></activity>
+        <activity android:name=".MenuCheckActivity" />
+        <activity android:name=".ContextMenuActivity"></activity>
     </application>
 
 </manifest>
