@@ -56,6 +56,7 @@ public class OptionXmlActivity extends ListActivity {
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        // 선택한 메뉴 아이템의 값이 item에 복사
         // item.getItemId(): 선택한 메뉴의 아이디
         switch (item.getItemId()) {
             // 리스트뷰 구분선의 두께 조절

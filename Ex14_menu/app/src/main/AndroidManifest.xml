@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".OptionMenuActivity" />
-        <activity android:name=".OptionXmlActivity"></activity>
+        <activity android:name=".OptionXmlActivity" />
+        <activity android:name=".MenuCheckActivity"></activity>
     </application>
 
 </manifest>

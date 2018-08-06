@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn2:
                 intent = new Intent(this, OptionXmlActivity.class);
                 break;
+            case R.id.btn3:
+                intent = new Intent(this, MenuCheckActivity.class);
+                break;
         }
         startActivity(intent);
     }
