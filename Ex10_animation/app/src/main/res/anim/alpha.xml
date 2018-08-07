@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha
+        android:duration="5000"
+        android:fromAlpha="1.0"
+        android:repeatCount="3"
+        android:repeatMode="reverse"
+        android:toAlpha="0.0" />
+
+</set>
+
+    <!-- alpha.xml
+        0.0 완전투명 ~ 1.0 완전불투명
+        android:fromAlpha - 투명도 처음 값
+        android:toAlpha - 투명도 마지막 값
+        android:duration - 애니메이션 작동 시간
+        android:repeatCount - 반복 횟수
+        android:repeatMode - 반복 옵션(reverse, restart)
+    -->
